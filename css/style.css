@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+#navBar{
+    background-color: rgb(33, 102, 79);
+    font-size: large;
+}
+
+div#columnaIzq{
+    background-color: #dfdcd0;
+}
+hr{
+    color: black;
+}
+
+.contenedorContacto{
+    text-align: center;
+    display:flex;
+}
+
+.contenedorPerfil, .contenedorIdiomas, .contenedorHabilidades{
+    text-align: start;
+    padding-left: 5%;
+    font-size: large;
+    font-family: 'Average Sans', sans-serif;
+}
+
+#columnaExpCpnt1, #columnaExpCont2, #columnaEdCont1, #columnaEdCont2, #columnaEdCont3{
+    font-family: 'Average Sans', sans-serif;
+}
+
+#nombrePerfil, #tituloPrincipal{
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+}
+
+div#contenedorFooter{
+    background-color: rgba(32, 31, 22, 0.952);
+    font-size:medium;
+    color: aliceblue;
+    padding: 10,10,10,10;
+    border: 10%;
+}
+
+.listaExperiencia{
+    font-size: large;
+}
+
+.fechasExperiencia{
+    font-size:x-large;
+}
+
+.linkNormal{
+    font-size:x-large;
+}
+
+#footerDesarrollador{
+    font-size: small;
+}
+
+#ocupacionPerfil, .fechasExperiencia{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#subTit1, #subTit2, #subTit3, #subTit4, #subTit5, #subTit6, #botonRecargar{
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+}

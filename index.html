@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--               Bootstrap 5.3                    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--               Font Awesome                     -->
+    <script src="https://kit.fontawesome.com/f21b0cfc24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Noto+Sans+Tagbanwa&family=Titillium+Web:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="/media/images/favicon.ico">
+    <!-- og protocol-->
+    <meta property="og:tittle" content="Proyecto final CV online" />
+    <meta property="og:type" content="Curriculum vitae online" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/media/images/imagenOgProtocol.jpg" />
+    <meta property="og:description" content="Este sitio es un CV online desarrollado como proyecto final para el curso Primeros pasos en el 
+        desarrollo Frontend TICMAS Argentina Programa 4.0" />
+    <title>Proyecto Final TICMAS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top" id="navBar">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="/media/images/argentina-programa.svg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="">
+                            <button type="button" id="botonRecargar" class="btn btn-success">Cargar otro perfil</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="contenedorPrincipal">
+        <h1 class="display-4 text-center fw-bold" id="tituloPrincipal">Proyecto Final CV online</h1>
+        <br>
+        <hr class="border border-dark border-2">
+        <div class="row" id="filaPrincipal">
+            <div class="col-md-5 col-sm-12" id="columnaIzq">
+                <img class="rounded mx-auto d-block py-3" src="" alt="Imagen de perfil" id="imagenDePerfil">
+                <!--  CONTACTO  -->
+                <br>
+                <A name="contacto"></A>
+                <p class="display-6 text-start fw-bold" id="subTit1">CONTACTO</p>
+                <hr class="border border-dark border-2">
+                <p class="text-center fs-3" id="nombrePerfilCon"></p>
+                <div class="contenedorContacto">
+                    <i class="fa-sharp fa-solid fa-envelope fa-xl fa-fw" style="padding-top: 2%;"></i>
+                    <p id="emailPerfil"></p>
+                </div>
+                <div class="contenedorContacto">
+                    <i class="fa-sharp fa-solid fa-phone fa-xl fa-fw" style="padding-top: 2%;"></i>
+                    <p id="telefonoPerfil"></p>
+                </div>
+                <div class="contenedorContacto">
+                    <i class="fa-sharp fa-solid fa-laptop fa-xl fa-fw" style="padding-top: 2%;"></i>
+                    <p id="sitioWebPerfil"></p>
+                </div>
+                <div class="contenedorContacto">
+                    <i class="fa-sharp fa-solid fa-heart fa-xl fa-fw" style="padding-top: 2%;"></i>
+                    <p id="redesPerfil"></p>
+                </div>
+                <div class="contenedorContacto">
+                    <i class="fa-sharp fa-solid fa-location-dot fa-xl fa-fw" style="padding-top: 2%;"></i>
+                    <p id="direccionPerfil" style="text-align: justify;"></p>
+                </div>
+                <br>
+                <br>
+                <!-- PERFIL -->
+                <p class="display-6 text-start fw-bold" id="subTit2">PERFIL</p>
+                <hr class="border border-dark border-2">
+                <div class="contenedorPerfil">
+                    <p id="edadPerfil"></p>
+                    <p id="fechaNacPerfil"></p>
+                    <p id="localidadPerfil"></p>
+                    <p id="nacionalidadPerfil"></p>
+                </div>
+                <br>
+                <br>
+                <!--  IDIOMAS  -->
+                <p class="display-6 text-start fw-bold" id="subTit3">IDIOMAS</p>
+                <hr class="border border-dark border-2">
+                <div class="contenedorIdiomas">
+                    <p>Inglés avanzado</p>
+                    <p>Francés intermedio</p>
+                </div>
+                <A name="habilidades"></A>
+                <br>
+                <br>
+                <!--  HABILIDADES  -->
+                <p class="display-6 text-start fw-bold" id="subTit4">HABILIDADES</p>
+                <hr class="border border-dark border-2">
+                <div class="contenedorHabilidades">
+                    <ul id="listaHabilidades">
+                        <li>Desarrollo procedural</li>
+                        <li>Programación con Objetos</li>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>Java 8</li>
+                        <li>Angular</li>
+                        <li>SpringBoot framework</li>
+                        <li>Base de datos MySQL</li>
+                    </ul>
+                </div>
+            </div> <!-- fin del div columna izquierda -->
+            <div class="col-md-7 col-sm-12" id="columnaDer">
+                <h2 class="display-3 text-center fw-bold" id="nombrePerfil"></h2>
+                <h2 class="display-5 text-center" id="ocupacionPerfil"> Desarrollador Full-Stack</h2>
+                <A name="experiencia"></A>
+                <br>
+                <p class="display-6 text-start fw-bold" id="subTit5">EXPERIENCIA</p>
+                <hr class="border border-dark border-2">
+                <div class="row" id="filaExp1">
+                    <div class="col-md-4 col-sm-12" id="columnaExpFecha1">
+                        <p class="fechasExperiencia"> Marzo 2019 - Actualidad</p>
+                    </div>
+                    <div class="col-md-8 col-sm-12" id="columnaExpCont1">
+                        <h3> Proyectos WEB - Team Leader</h3>
+                        <h4> Wind IT-Solutions</h4>
+                        <br>
+                        <ul class="listaExperiencia">
+                            <li> Lider del equipo de desarrollo de soluciones Web del proyecto Nintentou SA</li>
+                            <li> Interacción directa con el cliente</li>
+                            <li> Planificación de requerimientos</li>
+                            <li> Coordinación del equipo de desarrollo</li>
+                            <li> Gestión de recursos</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="filaExp2">
+                    <div class="col-md-4 col-sm-12" id="columnaExpFecha2">
+                        <p class="fechasExperiencia"> Enero 2013 - Marzo 2019</p>
+                    </div>
+                    <div class="col-md-8 col-sm-12" id="columnaExpCont2">
+                        <h3> Desarrollador Java sSr/Sr</h3>
+                        <h4> Ancentiur Software</h4>
+                        <br>
+                        <ul class="listaExperiencia">
+                            <li> Desarrollo de aplicaciones - Proyecto Mandarin</li>
+                            <li> Soluciones de requerimientos </li>
+                            <li> SpringBoot framework</li>
+                            <li> Planificación de aplicaciones con diagramas de flujo y UML</li>
+                        </ul>
+                    </div>
+                </div>
+                <A name="educacion"></A>
+                <br>
+                <p class="display-6 text-start fw-bold" id="subTit6">EDUCACIÓN</p>
+                <hr class="border border-dark border-2">
+                <div class="row" id="filaEd1">
+                    <div class="col-md-4 col-sm-12" id="columnaExpFecha1">
+                        <p class="fechasExperiencia"> Octubre 2022 </p>
+                    </div>
+                    <div class="col-md-8 col-sm-12" id="columnaEdCont1">
+                        <h3> Primeros pasos del desarrollo Frontend </h3>
+                        <a class="linkNormal"
+                            href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">Argentina
+                            Programa 4.0</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row" id="filaEd2">
+                    <div class="col-md-4 col-sm-12" id="columnaExpFecha2">
+                        <p class="fechasExperiencia"> Marzo 2016 </p>
+                    </div>
+                    <div class="col-md-8 col-sm-12" id="columnaEdCont2">
+                        <h3> Licenciatura en Sistemas </h3>
+                        <a class="linkNormal" href="https://www.info.unlp.edu.ar/licenciatura-en-sistemas/">UNLP
+                            Facultad de Informática</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row" id="filaEd3">
+                    <div class="col-md-4 col-sm-12" id="columnaExpFecha3">
+                        <p class="fechasExperiencia"> 2003-2008 </p>
+                    </div>
+                    <div class="col-md-8 col-sm-12" id="columnaEdCont3">
+                        <h3> Técnico Electromecánico </h3>
+                        <h4> EET Nro 1 Manuel Dorrego</h4>
+                    </div>
+                </div>
+            </div><!--  fin de la columna derecha -->
+        </div><!-- fin div fila principal -->
+        <script src="js/intercambioDatos.js"></script>
+    </div>
+    <footer>
+        <div class="container-fluid py-4" id="contenedorFooter">
+            <div class="row" id="filaFooter">
+                <div class="col-md-4 col-sm-12" id="footerDatosAutor">
+                    <p id="footerDesarrollador"> Documento desarrollado por Cristian Irala como Proyecto final del curso
+                        "Primeros pasos en el desarrollo Frontend" enmarcado en el programa Argentina Programa 4.0</p>
+                    <br>
+                </div>
+                <div class="col-md-4 col-sm-12" id="footerLinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#educacion">Educación</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12" id="footerRecursosLinks">
+                    <p> Los iconos utilizados provienen de la Web api </p>
+                    <a href="https://fontawesome.com/">Font Awesome</a>
+                    <p> Los datos de perfil se cargan desde la api</p>
+                    <a href="https://randomuser.me/"> Random User Generator </a>
+                    <p> Framework de estilos utilizado</p>
+                    <a href="https://getbootstrap.com/"> Bootstrap v5.3</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
